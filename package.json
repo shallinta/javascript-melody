@@ -1,0 +1,23 @@
+{
+  "name": "javascript-melody",
+  "version": "1.0.0",
+  "description": "Intersting javascript code.",
+  "main": "add.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shallinta/javascript-melody.git"
+  },
+  "keywords": [
+    "functional",
+    "programming"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shallinta/javascript-melody/issues"
+  },
+  "homepage": "https://github.com/shallinta/javascript-melody#readme"
+}
