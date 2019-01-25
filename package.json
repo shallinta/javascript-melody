@@ -2,7 +2,6 @@
   "name": "javascript-melody",
   "version": "1.0.0",
   "description": "Intersting javascript code.",
-  "main": "add.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
