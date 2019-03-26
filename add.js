@@ -78,3 +78,19 @@ const addddd6 = addddd5(0, 1);
 addddd6();
 addddd6(1, 1)(2)();
 addddd(1)(2, 3, 4)(5, 0)();
+
+
+// 5. 通过方法取出结果，如toString方法
+const adddddd = (x, acc = 0) => {
+  const tempAdd = (y) => adddddd(y, acc + x);
+  tempAdd.toString = () => acc + x;
+  return tempAdd;
+};
+
+adddddd(3)(4).toString();
+adddddd(3)(4)(5).toString();
+const adddddd5 = adddddd(2)(3);
+const adddddd6 = adddddd5(1);
+adddddd5.toString();
+adddddd6.toString();
+adddddd6(4).toString();
