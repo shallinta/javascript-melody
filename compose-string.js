@@ -24,7 +24,7 @@ const composeStrr = (...args) => {
     return [].concat(args[0]).map(s => `${s}`);
   }
   const [first, ...rest] = args;
-  if (typeof first === 'string' || typeof next === 'number') {
+  if (typeof first === 'string' || typeof first === 'number') {
     return composeStrr(...rest).map(r => `${first}${r}`);
   } else if (first.length) {
     return first.map(f => composeStrr(f, ...rest)).reduce((acc, next) => acc.concat(next), []);
