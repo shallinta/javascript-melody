@@ -30,6 +30,7 @@ const throttle = (fn, wait = 50, opt = {}) => {
       trailingTimer = setTimeout(() => {
         fn(...args);
         trailingTimer = null;
+        leadingCall = leading;
       }, wait);
     }
   };
