@@ -94,3 +94,13 @@ const adddddd6 = adddddd5(1);
 adddddd5.toString();
 adddddd6.toString();
 adddddd6(4).toString();
+
+
+// 6. 将多次调用转化为一次调用的多个参数，然后通过 toString (valueOf, Symbol.toPrimitive) 计算并输出结果
+const addddddd = (...args) => {
+  const tempAdd = (...arr) => {
+    return addddddd(...args.concat(arr))
+  }
+  tempAdd.toString = () => args.reduce((acc, n) => acc + n);
+  return tempAdd;
+};
